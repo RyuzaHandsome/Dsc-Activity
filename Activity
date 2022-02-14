@@ -1,0 +1,35 @@
+from pypresence import Presence
+
+import time
+
+id = input("Client ID : ")
+
+RPC = Presence(id)
+
+RPC.connect()
+
+RPC.update(
+
+    state="Donate Me Omg",
+
+    large_image="",
+
+    details="Pro Rpc",
+
+    start=time.time()
+
+)
+
+try:
+
+    print("[ STATUS: Ur Activity Connected! Ryuza? ]")
+
+    while True:
+
+        time.sleep(200)
+
+        
+
+except Exception as e:
+
+    print(e)
